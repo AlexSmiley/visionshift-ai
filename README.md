@@ -1,4 +1,7 @@
 # VisionShift AI
+
+**Live demo:** [https://visionshift-ai.vercel.app/](https://visionshift-ai.vercel.app/)
+
 Runnable prototype: WebGL live filters, optional trained neural style worker, recording and manual WebRTC sender signaling. Camera frames remain local unless AI style is selected. Use only with consent.
 
 ## Run
@@ -125,7 +128,7 @@ The inference endpoint returns 503 when weights are missing, 413 for requests la
 
 ## Deployment guide
 
-Deploy the repository root to Vercel as a static site using the included vercel.json. The output directory is web. No public deployment URL has been verified yet. Host the worker separately on a CPU/GPU machine with HTTPS, authentication, request limits and appropriate CORS settings. CORS is not authentication. Never bundle PyTorch into the static frontend.
+Deploy the repository root to Vercel as a static site using the included vercel.json. The output directory is web. Production frontend: [https://visionshift-ai.vercel.app/](https://visionshift-ai.vercel.app/). Vercel reported the production build ready; physical camera testing remains outstanding. Host the worker separately on a CPU/GPU machine with HTTPS, authentication, request limits and appropriate CORS settings. CORS is not authentication. Never bundle PyTorch into the static frontend.
 
 ## Validation and troubleshooting
 
