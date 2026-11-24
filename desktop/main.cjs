@@ -1,0 +1,1 @@
+const {app,BrowserWindow}=require('electron');const path=require('path');app.whenReady().then(()=>{const w=new BrowserWindow({width:1280,height:850,webPreferences:{contextIsolation:true,nodeIntegration:false,sandbox:true}});w.loadFile(path.join(__dirname,'../web/index.html'));});
